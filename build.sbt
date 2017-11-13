@@ -9,6 +9,8 @@ lazy val root = (project in file(".")).
     )),
     name := "akka-reactive",
     libraryDependencies ++= Seq(
-      scalaTest % Test
+      scalaTest % Test,
+      akkaActor,
+      akkaActorTest % Test
     )
   )
