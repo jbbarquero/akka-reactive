@@ -9,6 +9,7 @@ import com.malsolo.akka.reactive.book.guidebook.Tourist.Start
 import scala.concurrent.duration.SECONDS
 import scala.util.{Failure, Success}
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.io.StdIn
 
 //Run with sbt –DPORT=2552 "runMain com.malsolo.akka.reactive.book.guidebook.TouristMain"
 object TouristMain extends App {
@@ -29,7 +30,7 @@ object TouristMain extends App {
 
   Thread.sleep(200)
   println("Press any key to exit...")
-  new Scanner(System.in).nextLine()
+  StdIn.readLine()
   system.terminate()
   println("End TouristMain")
 }

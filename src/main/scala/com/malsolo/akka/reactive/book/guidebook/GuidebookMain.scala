@@ -4,6 +4,8 @@ import java.util.Scanner
 
 import akka.actor.ActorSystem
 
+import scala.io.StdIn
+
 //Run with sbt -DPORT=2553 "runMain com.malsolo.akka.reactive.book.guidebook.GuidebookMain"
 object GuidebookMain extends App {
 
@@ -12,7 +14,7 @@ object GuidebookMain extends App {
 
   Thread.sleep(200)
   println("Press any key to exit...")
-  new Scanner(System.in).nextLine()
+  StdIn.readLine()
   system.terminate()
   println("End GuidebookMain")
 }
