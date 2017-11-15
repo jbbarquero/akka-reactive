@@ -8,4 +8,7 @@ object Dependencies {
 
   lazy val akkaActor =  "com.typesafe.akka" %% "akka-actor" % akkaActorVersion
   lazy val akkaActorTest = "com.typesafe.akka" %% "akka-testkit" % akkaActorVersion
+
+  lazy val akkaActorRemote =  "com.typesafe.akka" %% "akka-remote" % akkaActorVersion
+
 }
